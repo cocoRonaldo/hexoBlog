@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 不积跬步无以至千里
 subtitle:
 description:
 keywords:
-author: John Doe
+author: Jiaq
 language:
 timezone:
 
@@ -79,4 +79,7 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: http://github.com/cocoRonaldo/cocoRonaldo.github.io.git
+  branch: master
+
