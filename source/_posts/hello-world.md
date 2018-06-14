@@ -37,7 +37,11 @@ categories:
 
 <h4 id="1.1"> 1.1 标题 # ## ###</h4>
 ### 基本用法
-<h4 id="1.2"> 1.2 变粗 ** ** </h4>
+<h1 id="1.2"> 1.2 变粗 ** ** </h1>
+```
+ 利用** 这里是变粗的内容**
+```
+
 **变粗**
 <h4 id="1.3">1.3 斜体 * * </h4>
 *斜体*
@@ -64,6 +68,8 @@ categories:
 
 <h4 id="1.8"> 1.8 加个框框</h4>
 
+- [ ] 重点符号
+- 重点啊
 - [ ] 重点符号
 
 <h4 id="1.9">1.9 加个x框框 - [x]</h4>
@@ -102,6 +108,19 @@ categories:
 
 <h4 id="3"> 3.插入link 和 图片</h4>
 插入链接
+```
+插入链接
+[link](https://note.youdao.com/)
+插入图片
+![点击跳转](/images/cloudy.png "hexo 网站")
+直接跳转
+<a href="/Main"> 你在哪里</a>
+代码插入图片
+<a href="www.baidu.com">
+    <img src="/images/cloudy.png">
+</a>
+```
+
 [link](https://note.youdao.com/)
 插入图片
 ![点击跳转](/images/cloudy.png "hexo 网站")
@@ -140,8 +159,19 @@ c2(no)->op2->e
 
 
 # 6 引用
-
+```
+插入引用
 {% youtube hY7M5jjJ9mM %}
+
+{% blockquote %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.
+{% endblockquote %}
+```
+{% youtube hY7M5jjJ9mM %}
+
+<blockquote>
+  adsfadsfasdfasdf
+</blockquote>
 
 {% blockquote %}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.
