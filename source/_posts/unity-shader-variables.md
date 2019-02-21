@@ -50,7 +50,7 @@ date: 2019-02-20 14:30:59
 
 | 语义      | 描述                                                        |
 | --------- | ----------------------------------------------------------- |
-| POSITION  | 模型空间的顶点位置，通常是float4类型                        |
+| POSITION  | 模型空间的顶点位置，通常是float4类型,                       |
 | NORMAL    | 顶点法线，通常是float3类型                                  |
 | TANGENT   | 顶点切线，通常是float4类型                                  |
 | TEXCOORDn | 顶点的纹理坐标，0表示第一组纹理，通常是float2或者float4类型 |
@@ -77,12 +77,13 @@ date: 2019-02-20 14:30:59
 
 ```c++
 struct v2f{
-    float4 pos : SV_POSITION;
-    fixed3 color0 : COLOR0;
+    float4 pos : SV_POSITION; //float最高精度浮点值，通常用32位来存储，
+    fixed3 color0 : COLOR0;   //fixed最低精度浮点值，通常用11位来存储，范围是-2.0~2.0
     fixed4 color1 : COLOR1;
-    half value0 : TEXCOORD0;
+    half value0 : TEXCOORD0;  //half中等精度的浮点值，通常用16位来存储，范围是-60000~60000
     float2 value1 : TEXTCOORD1;
 }
 ```
 
 一个语义可以用的寄存器只能处理4个浮点值(float)，如float3X4需要使用更多的空间，可以拆分为多个变量，每个变量存储了矩阵中的一行数据。
+
